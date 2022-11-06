@@ -1,0 +1,93 @@
+.contact{
+   height: 50vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contact-container{
+    margin: 2%;
+   height: 90%;
+   width: 93%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background: var(--light-yellow);
+   font-family: var(--letter-font);
+}
+.contact-container .contact-details{
+   width: 40%;
+   padding-left: 5%;
+}
+.contact-details h1{
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+     color: var(--letter-color); 
+}
+.contact-details h1 span.touch-title{
+    color: var(--primary-color);
+}
+.contact-details p{
+    font-family: var(--letter-font);
+    font-weight: 450;
+    line-height: 1.5;
+}
+
+
+.contact .contact-container .signup-container{
+    height: 7vh;
+    margin-top: 3%;
+    width: 40%;
+ }
+.contact .contact-container .signup-container input{
+     height: 100%;
+     width: 60%;
+     padding-left: 3%;
+     border-radius: 5px 0px 0px 5px;
+     border: 1px solid var(--primary-color);
+     outline: none;
+     font-family: var(--letter-font);
+     font-size: medium;
+ }
+ .contact .contact-container .signup-container input::placeholder{
+     font-size: 1rem;
+     text-transform: capitalize;
+ }
+ .contact .contact-container .signup-container input:focus{
+     box-shadow: 3px 3px 3px var(--primary-color);
+ }
+ .contact .contact-container .signup-container label.signup{
+    margin-top: 10px !important;
+    padding: 2.5% 3%;
+    border-radius: 0px 5px 5px 0px;
+    text-shadow: 1px 1px 3px var(--primary-color);
+    background: var(--primary-color);
+    color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 478px){
+    .contact{
+        height: 100%;
+    }
+    .contact-container{
+        padding: 2%;
+        flex-direction: column;
+    }
+    .contact-container .contact-details{
+        width: 100%;
+    }
+    .contact-details h1{
+        font-size: 1.8rem;
+    }
+    .contact-details p{
+        font-size: .9rem;
+        color: #222;
+    }
+
+    .contact-container .signup-container{
+        min-width: 100%;
+    }
+    .contact .contact-container .signup-container input{
+        width: 70%;
+    }
+}

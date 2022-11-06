@@ -1,0 +1,164 @@
+.hero{
+    height: 90vh;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+/* left side */
+.content .left{
+   width: 45%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding-left: 6%;
+}
+.content .left h1{
+    font-size: 3rem;
+    color: var(--letter-color);
+}
+.content .left h1 span.discover{
+    color: var(--primary-color);
+}
+.content .left h1 i.emoji-5{
+    left: 10%;
+    top: 5%;
+    transform: rotate(0deg);
+    z-index: 2;
+    font-size: 2.3rem;
+    color: var(--primary-color);
+}
+.content .left .signup-container{
+   height: 7vh;
+   margin-top: 3%;
+}
+.content .left .signup-container input{
+    height: 100%;
+    width: 60%;
+    padding-left: 3%;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid var(--primary-color);
+    outline: none;
+    font-family: var(--letter-font);
+    font-size: medium;
+}
+.content .left .signup-container input::placeholder{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+.content .left .signup-container input:focus{
+    box-shadow: 3px 3px 3px var(--primary-color);
+}
+.content .left .signup-container label.signup{
+   margin-top: 10px !important;
+   padding: 2% 3%;
+   border-radius: 0px 5px 5px 0px;
+   text-shadow: 1px 1px 3px var(--primary-color);
+   background: var(--primary-color);
+   color: #fff;
+   border: 1px solid var(--primary-color);
+}
+/* .content .left .signup-container label.signup:hover{
+    box-shadow: 3px 3px 3px var(--primary-color);
+} */
+
+/* right side */
+.content .right{
+   width: 50%;
+}
+.content .right .img-container{
+    height: 90vh;
+    position: relative;
+}
+.content .right .img-container::before{
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    background-color: #ffc300;
+    border-radius:50% ;
+    filter: blur(100px);
+    z-index: -99;
+}
+.content .right .img-container img{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    box-shadow: rgb(233, 196, 106) 0px 2px 8px 0px;
+    border-radius: 2px;
+}
+.right .img-container img.img-1{
+    height: 60%;
+    width: 50%;
+    right: 10%;
+    z-index: 2;
+}
+.right .img-container img.img-2{
+    left: 18%;
+    bottom: 2%;
+    height: 35%;
+    width: 35%;
+    z-index: 1;   
+}
+.right .img-container img.img-3{
+    bottom: 2%;
+    right: 10%;  
+    height: 35%;
+    width: 35%;
+    z-index: 1;      
+}
+
+/* emojis */
+.emoji-div .fa{
+    position: absolute;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    transform: rotate(-35deg);
+}
+.emoji-div .emoji-1{
+    left: 6%;
+    top: 13%;
+}
+.emoji-div .emoji-2{
+    left: 6%;
+    bottom: 10%;
+}
+.emoji-div .emoji-3{
+    right: 50%;
+    top: 12%;
+}
+.emoji-div .emoji-4{
+    right: 45%;
+    bottom: 30%;
+}
+.emoji-div .emoji-6{
+    right: 3%;
+    bottom: 4%;
+}
+
+@media screen and (max-width: 478px){
+    .hero{
+        /* border: 2px solid red; */
+    }
+    .content .left{
+        min-width: 100%;
+        /* border: 2px solid red; */
+    }
+    .content .left::before{
+        content: '';
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        background-color: #ffc300;
+        border-radius:50% ;
+        filter: blur(100px);
+        z-index: -99; 
+    }
+    .emoji-div{
+        visibility: hidden;
+    }
+    .content .right{
+        visibility: hidden;
+    }
+}

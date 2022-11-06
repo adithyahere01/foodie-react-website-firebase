@@ -1,0 +1,79 @@
+.featured{
+    height: 80vh;
+}
+.featured h1{
+    text-align: center;
+    margin-top: 4%;
+    font-size: 3rem;
+    color: var(--letter-color);
+    position: relative;
+}
+.featured h1 span.line{
+   position: absolute;
+   bottom: 2px;
+   width: 70px;
+   left: 47%;
+    border: 2px solid var(--primary-color);
+    background: var(--primary-color);
+}
+.featured .content-featured{
+   height: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.featured .content-featured .card{
+    width: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.featured .content-featured .card img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+}
+.content-featured .card img:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.content-featured .card .details{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+    border-radius: 0px 0px 10px 10px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 3px 3px 8px;
+}
+.card .details p{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: var(--letter-font);
+}
+.card .details p.price{
+    color: #fb8500;
+}
+
+@media screen and (max-width: 478px){
+    .featured{
+        height: 100%;
+        /* border: 2px solid rebeccapurple; */
+    }
+    .featured .content-featured{
+        margin-top: 5%;
+        flex-direction: column;
+    }
+    .featured .content-featured .card{
+        width: 68%;
+        padding: 4% 0;
+    }
+
+}

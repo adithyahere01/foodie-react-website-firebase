@@ -1,0 +1,128 @@
+footer{
+    height: fit-content;
+    margin-top: 35px;
+}
+.footer-details{
+    height: 6.25rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--light-yellow);
+    font-family: var(--letter-font);
+}
+.footer-details .footer-item h4{
+    position: relative;
+   text-transform: capitalize;
+   font-weight: 700;
+}
+.footer-details .footer-item p{
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: 2%;
+}
+.footer-details .footer-item h4 i{
+   position: absolute;
+   font-size: 1.6rem;
+   left: -40px;
+   top: 5px;
+}
+
+
+.footer-body{
+   height: 40vh;
+   display: flex;
+   justify-content: space-around;
+   background: #ffbe0b;
+   color: #fff;
+   font-family: var(--letter-font);
+}
+.footer-body .footer-body-item{
+    margin-top: 40px;
+    width: 20%;
+}
+.footer-body-item.first-one{
+   width: 22%;
+}
+.footer-body-item.first-one h4{
+    font-size: 3rem;
+    font-family: var(--brand-font);
+}
+.footer-body-item h4{
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+.footer-body-item p{
+    font-weight: 450;
+    line-height: 1.5;
+}
+
+.footer-body-item ul{
+    height: 60%;
+    font-weight: 450;
+    cursor: pointer;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+.footer-body-item.follow ul li i{
+   font-size: 1.6rem;
+}
+
+
+/* copy */
+footer p.copyright{
+   height: 45px;
+   background: #ffbe0b;
+   color: #fff;
+   font-size: 1.2rem;
+   font-weight: 500;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+
+@media screen and (max-width:478px){
+    .footer-details{
+        height: fit-content;
+        padding: 3% 50px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-details .footer-item{
+        margin-top: 4%;
+    }
+    .footer-body{
+        height: 100%;
+        flex-direction: column;
+        padding-left: 10px;
+    }
+    .footer-body .footer-body-item{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .footer-body-item.first-one h4{
+        font-size: 1.6rem;
+    }
+    .footer-body-item h4{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+    }
+    .footer-body-item p{
+        font-size: .9rem;
+    }
+    .footer-body-item.follow ul{
+        height: 100%;
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer p.copyright{
+        font-size: .9rem;
+        padding: 2%;
+        height: fit-content;
+        border: none;
+        outline: none;
+    }
+
+}
